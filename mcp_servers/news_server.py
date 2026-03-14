@@ -13,12 +13,13 @@ def get_company_news(symbol: str) -> dict:
         return {"symbol": symbol, "error": "Missing NEWSAPI_KEY"}
 
     query = symbol
-    url = "https://newsapi.org/v2/everything"
+    url = "https://newsdata.io/api/1/market"
     params = {
         "q": query,
         "sortBy": "publishedAt",
         "pageSize": 5,
         "language": "en",
+        "symbol": symbol,
         "apiKey": NEWSAPI_KEY,
     }
 
