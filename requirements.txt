@@ -1,0 +1,10 @@
+google-adk
+fastapi
+uvicorn
+pydantic
+python-dotenv
+streamlit
+requests
+pytest
+httpx
+mcp
